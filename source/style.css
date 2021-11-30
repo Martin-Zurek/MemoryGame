@@ -1,0 +1,7 @@
+div.grid {
+    display: grid;
+}
+
+.block {
+    background: rgba(100, 100, 100, 1)
+}
