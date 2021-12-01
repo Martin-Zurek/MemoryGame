@@ -22,3 +22,7 @@ If you would like to play the game, click [here](https://martin-zurek.github.io/
 # Attribution
 
 Some portion of the code is not original and has been taken off the following CodePen [link](https://codepen.io/torbenxxx/pen/MWJBzWP).
+
+# Other
+
+<b>Made By Martin</b>
