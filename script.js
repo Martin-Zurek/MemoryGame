@@ -1,11 +1,18 @@
-window.timeBlocksShows = 4.5; //4.5sec
-window.timeUntilLose = 12; //12sec
-window.correctBlocksNum = 14;
-window.maxIncorrectBlocksNum = 3;
-window.allBlocksNum = 36;
+window.timeBlocksShows = 5; // 5 Seconds
+window.timeUntilLose = 30; // 30 Seconds
+window.correctBlocksNum = 10; // 10 Total Blocks
+window.maxIncorrectBlocksNum = 3; // 3 Incorrect Blocks 
+window.allBlocksNum = 25; // 25 Maximum Blocks
 
 $(document.body).on("click", ".block", onBlockClick);
+$(document.body).on("click", ".start-button", startGame);
 $(document.body).on("click", ".restart-button, .grid.won, .grid.lost", restartGame);
+
+function startGame(){
+  restartGame();
+  alert("Memory Game has been initialized. You will be shown");
+
+}
 
 function generateRandomNumberBetween(min=1,max=window.allBlocksNum,length = window.correctBlocksNum){
   var arr = [];
@@ -27,8 +34,6 @@ function onBlockClick(e){
   blockNum = Number(blockNum);
   let correctBlocks = window.gridCorrectBlocks;
 
-  
-
   let correct = correctBlocks.indexOf(blockNum) !== -1;
   clickedBlock.classList.add("clicked");
   console.log(blockNum, correct, correctBlocks);
@@ -42,7 +47,6 @@ function onBlockClick(e){
   }
   
   checkWinOrLost();
-  
 }
 
 function showCorrectBlocks(){
@@ -57,6 +61,7 @@ function showCorrectBlocks(){
     }
   });
 }
+
 function hideAllBlocks(){
   $(".block").each((i,ele)=>{
     ele.classList.remove("show");
@@ -76,7 +81,7 @@ function restartGame(){
   setTimeout(()=>{
     hideAllBlocks();
     window.activateClicking = true;
-    console.log("Restarted")
+    console.log("Memory Game has been restarted.")
   }, timeBlocksShows*1000);
 }
 
@@ -101,5 +106,3 @@ function isGameWon(){
 function isGameLost(){
   return $(".incorrect").length >= window.maxIncorrectBlocksNum;
 }
-
-restartGame();

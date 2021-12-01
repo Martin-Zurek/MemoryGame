@@ -3,23 +3,23 @@
     /* Background Color */
     --background-color: rgb(185, 185, 185);
 
-    /* Grid/Block Color */
+    /* Score Color */
+    --score-color: rgb(55, 55, 55);
+
+    /* Main Grid/Block Color */
     --grid-color: rgb(55, 55, 55);
     --block-color: rgb(115, 115, 115);
 
-    /* Button Color */
-    --button-color: rgb(125, 125, 125);
-    --button-hover-color: rgb(145, 145, 145);
-
-    /* Stuffs */
+    /* Other Grid/Block Color */
     --won-color: rgb(0, 255, 0);
     --lost-color: rgb(255, 0, 0);
     --incorrect-color: rgb(185, 0, 0);
     --correct-color: rgb(185, 185, 185);
 
-
-    
-    
+    /* Button Color */
+    --button-color: rgb(125, 125, 125);
+    --button-hover-color: rgb(145, 145, 145);
+    --border-color: rgb(85, 85, 85);
 
     /* Font Color */
     --font-color: rgb(0, 0, 0);
@@ -51,15 +51,15 @@ h2 {
 
 /* Grid */
 div.grid {
-    margin: 15px auto;
-    width: 750px;
-    height: 750px;
+    margin: 25px auto;
+    width: 650px;
+    height: 650px;
     display: grid;
     background: var(--grid-color);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 15px;
-    padding: 15px;
+    gap: 10px;
+    padding: 10px;
 }
 
 /* Grid - Won Color */
@@ -76,35 +76,57 @@ div.grid {
 .block {
     width: 100%;
     height: 100%;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     background: var(--block-color);
 }
 
-
-.block.show,.block.correct{
-  background: var(--correct-color);
+/* Block Show - Block Correct */
+.block.show, .block.correct{
+    background: var(--correct-color);
 }
 
-
+/* Block Incorrect */
 .block.incorrect{
-  background: var(--incorrect-color);
+    background: var(--incorrect-color);
 }
 
+/* Grid Lost - Show Block */
 .grid.lost .show.block {
-  background: var(--won-color);
+    background: var(--won-color);
 }
 
+/* Grid Lost - Block*/
 .grid.lost .block {
-  background: var(--lost-color);
+    background: var(--lost-color);
 }
 
+/* Grid Lost - Block Clicked Incorrect*/
 .grid.lost .block.clicked.incorrect {
-  background: var(--incorrect-color);
+    background: var(--incorrect-color);
 }
 
+/* Grid Lost - Block Clicked Correct */
 .grid.lost .block.clicked.correct {
-  background: var(--correct-color);
+    background: var(--correct-color);
+}
+
+/* Start Button - Base */
+.start-button {
+    display: block;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.1s;
+    border: 2px solid var(--border-color);
+    background: var(--button-color);
+}
+
+/* Start Button - Hover */
+.start-button:hover {
+    background: var(--button-hover-color);
 }
 
 /* Restart Button - Base */
@@ -116,6 +138,7 @@ div.grid {
     text-align: center;
     text-decoration: none;
     transition-duration: 0.1s;
+    border: 2px solid var(--border-color);
     background: var(--button-color);
 }
 
