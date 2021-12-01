@@ -6,16 +6,20 @@
     /* Grid/Block Color */
     --grid-color: rgb(55, 55, 55);
     --block-color: rgb(115, 115, 115);
-    --grid-clicked-color: rgb(155, 155, 155);
 
     /* Button Color */
     --button-color: rgb(125, 125, 125);
     --button-hover-color: rgb(145, 145, 145);
 
-    /* Won/Lost Color */
+    /* Stuffs */
     --won-color: rgb(0, 255, 0);
     --lost-color: rgb(255, 0, 0);
     --incorrect-color: rgb(185, 0, 0);
+    --correct-color: rgb(185, 185, 185);
+
+
+    
+    
 
     /* Font Color */
     --font-color: rgb(0, 0, 0);
@@ -77,34 +81,30 @@ div.grid {
     background: var(--block-color);
 }
 
-/* Block - Show Correct */
+
 .block.show,.block.correct{
-    background: var(--grid-clicked-color);
+  background: var(--correct-color);
 }
 
-/* Block - Incorrect */
+
 .block.incorrect{
-    background: var(--incorrect-color);
+  background: var(--incorrect-color);
 }
 
-/* Grid - Lost Show Block */
 .grid.lost .show.block {
-    background: var(--won-color);
+  background: var(--won-color);
 }
 
-/* Grid - Lost Block */
 .grid.lost .block {
-    background: var(--lost-color);
+  background: var(--lost-color);
 }
 
-/* Grid - Lost Block Clicked Incorrect*/
 .grid.lost .block.clicked.incorrect {
-    background: var(--incorrect-color);
+  background: var(--incorrect-color);
 }
 
-/* Grid - Lost Block Clicked Correct*/
 .grid.lost .block.clicked.correct {
-    background: var(--grid-clicked-color);
+  background: var(--correct-color);
 }
 
 /* Restart Button - Base */
