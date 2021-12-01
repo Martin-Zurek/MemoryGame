@@ -82,6 +82,7 @@ function checkWinOrLost(){
   if(isGameWon()){
     $(".grid").addClass("won");
     window.activateClicking = false;
+    // Add 1 to score.
     return "won";
   }
   if(isGameLost()){
