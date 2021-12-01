@@ -51,7 +51,7 @@ h2 {
 
 /* Grid */
 div.grid {
-    margin: 25px auto;
+    margin: 15px auto;
     width: 650px;
     height: 650px;
     display: grid;
@@ -126,23 +126,5 @@ div.grid {
 
 /* Start Button - Hover */
 .start-button:hover {
-    background: var(--button-hover-color);
-}
-
-/* Restart Button - Base */
-.restart-button {
-    display: block;
-    padding: 15px 50px;
-    cursor: pointer;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    transition-duration: 0.1s;
-    border: 2px solid var(--border-color);
-    background: var(--button-color);
-}
-
-/* Restart Button - Hover */
-.restart-button:hover {
     background: var(--button-hover-color);
 }

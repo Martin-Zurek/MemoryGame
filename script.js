@@ -5,14 +5,7 @@ window.maxIncorrectBlocksNum = 3; // 3 Incorrect Blocks
 window.allBlocksNum = 25; // 25 Maximum Blocks
 
 $(document.body).on("click", ".block", onBlockClick);
-$(document.body).on("click", ".start-button", startGame);
-$(document.body).on("click", ".restart-button, .grid.won, .grid.lost", restartGame);
-
-function startGame(){
-  restartGame();
-  alert("Memory Game has been initialized. You will be shown");
-
-}
+$(document.body).on("click", ".start-button, .grid.won, .grid.lost", restartGame);
 
 function generateRandomNumberBetween(min=1,max=window.allBlocksNum,length = window.correctBlocksNum){
   var arr = [];
@@ -81,7 +74,7 @@ function restartGame(){
   setTimeout(()=>{
     hideAllBlocks();
     window.activateClicking = true;
-    console.log("Memory Game has been restarted.")
+    console.log("Memory Game has been started.")
   }, timeBlocksShows*1000);
 }
 
