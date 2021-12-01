@@ -43,7 +43,6 @@ function onBlockClick(e){
 }
 
 function showCorrectBlocks(){
-  
   $(".block").each((i,ele)=>{
     let blockNum = ele.classList.value.match(/(?:block-)(\d+)/)[1];
     blockNum = Number(blockNum);
@@ -82,7 +81,6 @@ function checkWinOrLost(){
   if(isGameWon()){
     $(".grid").addClass("won");
     window.activateClicking = false;
-    // Add 1 to score.
     return "won";
   }
   if(isGameLost()){
