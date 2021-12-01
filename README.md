@@ -1,4 +1,4 @@
-![Brain Icon](https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png | width=50)
+<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="25" height="25">
 
 # Memory Game
 
