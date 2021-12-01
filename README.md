@@ -10,3 +10,6 @@ Cool memory game which you can play.
 
 * Scoreboard
 
+# Other
+
+[Inspiration](https://codepen.io/torbenxxx/pen/MWJBzWP)
