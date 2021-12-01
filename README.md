@@ -15,4 +15,4 @@ Memory Game is an open-source game that enables
 
 # Attribution
 
-Some portion of the code is not original and has been taken off the following CodePen - [link](https://codepen.iotorbenxxx/pen/MWJBzWP).
+Some portion of the code is not original and has been taken off the following CodePen - [link](https://codepen.io/torbenxxx/pen/MWJBzWP).
