@@ -1,31 +1,125 @@
+/* Document Root */
+:root {
+    /* Background Color */
+    --background-color: rgb(185, 185, 185);
+
+    /* Grid/Block Color */
+    --grid-color: rgb(55, 55, 55);
+    --block-color: rgb(115, 115, 115);
+    --grid-clicked-color: rgb(155, 155, 155);
+
+    /* Button Color */
+    --button-color: rgb(125, 125, 125);
+    --button-hover-color: rgb(145, 145, 145);
+
+    /* Won/Lost Color */
+    --won-color: rgb(0, 255, 0);
+    --lost-color: rgb(255, 0, 0);
+    --incorrect-color: rgb(185, 0, 0);
+
+    /* Font Color */
+    --font-color: rgb(0, 0, 0);
+}
+
+/* Body */
 body {
-    background-color: rgba(15, 15, 15, 1);
+    background-color: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: "Oswald";
 }
 
+/* Heading One */
+h1 {
+    color: var(--font-color);
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Heading Two */
+h2 {
+    color: var(--font-color);
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Grid */
 div.grid {
     margin: 15px auto;
     width: 750px;
     height: 750px;
     display: grid;
-    background: rgba(50, 50, 50, 1);
+    background: var(--grid-color);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
     padding: 15px;
 }
 
+/* Grid - Won Color */
+.grid.won .block {
+    background: var(--won-color);
+}
+
+/* Grid - Lost Color*/
+.grid.lost .block {
+    background: var(--lost-color);
+}
+
+/* Block */
 .block {
     width: 100%;
     height: 100%;
-    background: rgba(100, 100, 100, 1);
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--block-color);
 }
 
+/* Block - Show Correct */
+.block.show,.block.correct{
+    background: var(--grid-clicked-color);
+}
+
+/* Block - Incorrect */
+.block.incorrect{
+    background: var(--incorrect-color);
+}
+
+/* Grid - Lost Show Block */
+.grid.lost .show.block {
+    background: var(--won-color);
+}
+
+/* Grid - Lost Block */
+.grid.lost .block {
+    background: var(--lost-color);
+}
+
+/* Grid - Lost Block Clicked Incorrect*/
+.grid.lost .block.clicked.incorrect {
+    background: var(--incorrect-color);
+}
+
+/* Grid - Lost Block Clicked Correct*/
+.grid.lost .block.clicked.correct {
+    background: var(--grid-clicked-color);
+}
+
+/* Restart Button - Base */
 .restart-button {
     display: block;
-    background: rgba(130, 130, 130, 1);
+    padding: 15px 50px;
     cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.1s;
+    background: var(--button-color);
+}
+
+/* Restart Button - Hover */
+.restart-button:hover {
+    background: var(--button-hover-color);
 }

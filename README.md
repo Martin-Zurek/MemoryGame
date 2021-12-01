@@ -1,6 +1,6 @@
 # Memory Game
  
-Text Goes Here
+Cool memory game which you can play.
 
 # Live Version
 
