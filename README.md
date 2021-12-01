@@ -1,10 +1,10 @@
 # Memory Game
- 
-Cool memory game which you can play.
+
+Memory Game is an open-source game 
 
 # Live Version
 
-[Click Here To View](https://martin-zurek.github.io/MemoryGame/)
+[Click Here To Play](https://martin-zurek.github.io/MemoryGame/)
 
 # To Do List
 
@@ -12,4 +12,4 @@ Cool memory game which you can play.
 
 # Attribution
 
-[Click Here To View](https://codepen.io/torbenxxx/pen/MWJBzWP)
+[View Attribution](https://codepen.io/torbenxxx/pen/MWJBzWP)
