@@ -1,6 +1,6 @@
-<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="50" height="50">
-
 # Memory Game
+
+<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="80" height="80">
 
 Memory Game is an open-source game that enables users to practise their memory. Your goal is to click on squares in the positions that we're shown when you clicked start.
 
