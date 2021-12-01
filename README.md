@@ -1,4 +1,4 @@
-<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="35" height="35">
+<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="50" height="50">
 
 # Memory Game
 
@@ -6,13 +6,15 @@ Memory Game is an open-source game that enables users to practise their memory. 
 
 # Gameplay Instructions
 
-1. Text Goes Here
-2. Text Goes Here
-3. Text Goes Here
+1. Click on "Start New Game".
+2. The game will show you a series of squares. You must remember these!
+3. After the squares dissapear, you will need to click in the previous location of the squares.
+
+<b>NOTE:</b> You only have 5 seconds to view the squares, and there is a maximum of 3 incorrect squares which you can click.
 
 # Live Version
 
-[Click Here To Play](https://martin-zurek.github.io/MemoryGame/)
+If you would like to play the game, click [here](https://martin-zurek.github.io/MemoryGame/).
 
 # To Do List
 
