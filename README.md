@@ -1,4 +1,4 @@
-<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="25" height="25">
+<img src="https://github.com/Martin-Zurek/MemoryGame/blob/main/assets/icon.png" width="35" height="35">
 
 # Memory Game
 
