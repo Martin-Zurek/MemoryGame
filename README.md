@@ -1,6 +1,9 @@
 # Memory Game
 
-Memory Game is an open-source game 
+Memory Game is an open-source game that enables
+
+# Gameplay Instructions
+
 
 # Live Version
 
@@ -12,4 +15,4 @@ Memory Game is an open-source game
 
 # Attribution
 
-[View Attribution](https://codepen.io/torbenxxx/pen/MWJBzWP)
+Some portion of the code is not original and has been taken off the following CodePen.IO [Link](https://codepen.iotorbenxxx/pen/MWJBzWP.
